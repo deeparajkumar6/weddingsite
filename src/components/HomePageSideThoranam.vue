@@ -1,5 +1,5 @@
 <template>
-  <v-col :cols="colsThoranam" class="flex-grow-0 flex-shrink-0">
+  <v-col :cols="colsThoranam">
     <v-img v-show="isMobile" src="@/assets/sidethoranam1.png"></v-img>
     <v-img
       v-show="!isMobile"

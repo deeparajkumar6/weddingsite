@@ -1,14 +1,14 @@
 <template>
   <v-responsive class="Wedding fill-height ma-0 pa-0">
     <CenterThoranam />
-    <v-row class="d-flex justify-center align-center">
+    <v-row class="d-flex" style="height: 100vh">
       <HomePageSideThoranam :colsThoranam="colsThoranam" :isMobile="isMobile" />
       <v-col
         class="d-flex flex-column justify-center align-center my-auto"
         :class="isMobile ? 'mx-0 pa-0' : ''"
       >
         <CountDown v-if="isMobile" />
-        <v-row>
+        <v-row class="my-2">
           <v-col :cols="isMobile ? null : 3">
             <v-img
               src="../assets/DummyPic.png"
@@ -28,12 +28,12 @@
         <v-row
           class="text-secondary d-flex flex-column justify-center align-center"
         >
-          <div class="NameClass" :class="isMobile ? 'text-h6' : 'text-h4'">
+          <div class="NameClass my-2" :class="isMobile ? 'text-h6' : 'text-h4'">
             Sowjanya & Kaarthik
           </div>
           <div class="d-flex flex-column justify-center align-center">
-            <div>December 13 & 14, 2023</div>
-            <div>Manghalam Weddings & Conventions,</div>
+            <div class="mt-4">December 13 & 14, 2023</div>
+            <div class="mt-2">Manghalam Weddings & Conventions,</div>
             <div>Srirangam, Trichy, Tamil Nadu.</div>
           </div>
         </v-row>

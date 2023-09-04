@@ -3,7 +3,7 @@
     class="d-flex flex-column justify-center align-center ma-0 pa-0"
     :class="isMobile ? null : 'text-h6'"
   >
-    <div>Countdown to our big day!</div>
+    <div class="mb-2">Countdown to our big day!</div>
 
     <div class="d-flex">
       <div
