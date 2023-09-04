@@ -1,9 +1,12 @@
 <template>
   <v-responsive class="Wedding fill-height ma-0 pa-0">
     <CenterThoranam />
-    <v-row class="d-flex">
+    <v-row class="d-flex justify-center align-center">
       <HomePageSideThoranam :colsThoranam="colsThoranam" :isMobile="isMobile" />
-      <v-col class="d-flex flex-column justify-center align-center my-auto">
+      <v-col
+        class="d-flex flex-column justify-center align-center my-auto"
+        :class="isMobile ? 'mx-0 pa-0' : ''"
+      >
         <CountDown v-if="isMobile" />
         <v-row>
           <v-col :cols="isMobile ? null : 3">
@@ -25,7 +28,7 @@
         <v-row
           class="text-secondary d-flex flex-column justify-center align-center"
         >
-          <div class="NameClass" :class="isMobile ? 'text-h5' : 'text-h3'">
+          <div class="NameClass" :class="isMobile ? 'text-h6' : 'text-h4'">
             Sowjanya & Kaarthik
           </div>
           <div class="d-flex flex-column justify-center align-center">

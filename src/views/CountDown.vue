@@ -1,6 +1,6 @@
 <template>
   <v-col
-    class="d-flex flex-column justify-center align-center"
+    class="d-flex flex-column justify-center align-center ma-0 pa-0"
     :class="isMobile ? null : 'text-h6'"
   >
     <div>Countdown to our big day!</div>
