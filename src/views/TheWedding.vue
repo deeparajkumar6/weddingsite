@@ -1,15 +1,39 @@
 <template>
   <v-responsive class="Wedding fill-height ma-0 pa-0">
+    <CenterThoranam />
     <v-row class="d-flex">
       <HomePageSideThoranam :colsThoranam="colsThoranam" :isMobile="isMobile" />
-      <v-col>
-        <v-img
-          class="mx-auto"
-          :height="heightOfCenterThoranam"
-          max-width="800"
-          src="@/assets/home-thoranam.png"
-        ></v-img>
-        <div>Countdown to our big day!</div>
+      <v-col class="d-flex flex-column justify-center align-center my-auto">
+        <CountDown v-if="isMobile" />
+        <v-row>
+          <v-col :cols="isMobile ? null : 3">
+            <v-img
+              src="../assets/DummyPic.png"
+              aspect-ratio="1"
+              :width="widthOfPic"
+            ></v-img>
+          </v-col>
+          <CountDown :cols="isMobile ? null : 6" v-if="!isMobile" />
+          <v-col :cols="isMobile ? null : 3">
+            <v-img
+              src="../assets/DummyPic.png"
+              aspect-ratio="1"
+              :width="widthOfPic"
+            ></v-img>
+          </v-col>
+        </v-row>
+        <v-row
+          class="text-secondary d-flex flex-column justify-center align-center"
+        >
+          <div class="NameClass" :class="isMobile ? 'text-h5' : 'text-h3'">
+            Sowjanya & Kaarthik
+          </div>
+          <div class="d-flex flex-column justify-center align-center">
+            <div>December 13 & 14, 2023</div>
+            <div>Manghalam Weddings & Conventions,</div>
+            <div>Srirangam, Trichy, Tamil Nadu.</div>
+          </div>
+        </v-row>
       </v-col>
       <HomePageSideThoranam :colsThoranam="colsThoranam" :isMobile="isMobile" />
     </v-row>
@@ -19,6 +43,8 @@
 <script setup>
 import { storeToRefs } from "pinia";
 import { useAppStore } from "@/store/app";
+import CenterThoranam from "./CenterThoranam.vue";
+import CountDown from "./CountDown.vue";
 const { isMobile } = storeToRefs(useAppStore());
 </script>
 
@@ -33,12 +59,12 @@ export default {
       const store = useAppStore();
       return store.isMobile ? "2" : "1";
     },
-    heightOfCenterThoranam() {
+    widthOfPic() {
       const store = useAppStore();
-      return store.isMobile ? "auto" : "25vh";
+      return store.isMobile ? "100" : "200";
     },
   },
-  components: { HomePageSideThoranam },
+  components: { HomePageSideThoranam, CenterThoranam, CountDown },
 };
 </script>
 <style scoped>
@@ -46,5 +72,9 @@ export default {
   background-color: #a4091a;
   height: auto;
   color: white;
+}
+
+.NameClass {
+  font-family: "Ribeye Marrow" !important;
 }
 </style>
