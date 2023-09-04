@@ -28,8 +28,16 @@
         <v-row
           class="text-secondary d-flex flex-column justify-center align-center"
         >
-          <div class="NameClass my-2" :class="isMobile ? 'text-h6' : 'text-h4'">
-            Sowjanya & Kaarthik
+          <div class="d-flex my-2" :class="isMobile ? 'flex-column' : ''">
+            <div class="NameClass" :class="isMobile ? 'text-h5' : 'text-h4'">
+              Sowjanya
+            </div>
+            <div class="NameClass" :class="isMobile ? 'text-h5' : 'text-h4'">
+              &nbsp; & &nbsp;
+            </div>
+            <div class="NameClass" :class="isMobile ? 'text-h5' : 'text-h4'">
+              Kaarthik
+            </div>
           </div>
           <div class="d-flex flex-column justify-center align-center">
             <div class="mt-4">December 13 & 14, 2023</div>
