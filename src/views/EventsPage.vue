@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row>
-        <v-col cols="12" md="6" v-for="item in buttonlist" :key="item.text">
+        <v-col cols="12" sm="6" v-for="item in buttonlist" :key="item.text">
           <v-card
             class="mx-auto"
             elevation="0"
@@ -27,6 +27,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-card height="100px" elevation="0"> </v-card>
   </div>
 </template>
 
