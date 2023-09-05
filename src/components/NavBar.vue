@@ -12,10 +12,10 @@
         :key="button.text"
         :to="button.to"
         class="ma-2 elevation-0"
-        :class="isMobile ? 'text-body-2' : ''"
+        :class="isMobile ? 'text-body-1' : ''"
       >
         <div class="d-flex flex-column justify-center align-center">
-          <v-img height="20" width="20" :src="button.imgSrc"></v-img>
+          <v-img height="30" width="30" :src="button.imgSrc"></v-img>
           <div class="text-primary">{{ button.text }}</div>
         </div>
       </v-card>
