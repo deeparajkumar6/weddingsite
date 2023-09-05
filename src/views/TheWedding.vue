@@ -73,6 +73,132 @@ export default {
     },
   },
   components: { HomePageSideThoranam, CenterThoranam, CountDown },
+
+  methods: {
+    start() {
+      this.$confetti.start({
+        particlesPerFrame: 0.8,
+        windSpeedMax: 0.25,
+        particles: [
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(1).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(2).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(3).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(4).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(5).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(6).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(7).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(8).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(9).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(10).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(11).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(12).png",
+          },
+        ],
+      });
+    },
+
+    stop() {
+      this.$confetti.stop();
+    },
+
+    updateConfetti() {
+      this.$confetti.update({
+        particles: [
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(1).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(2).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(3).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(4).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(5).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(6).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(7).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(8).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(9).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(10).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(11).png",
+          },
+          {
+            type: "image",
+            url: "https://d11wxd06uhkmuf.cloudfront.net/confetti/flower%20(12).png",
+          },
+        ],
+      });
+    },
+  },
+  mounted() {
+    this.updateConfetti();
+    // start confetti and after 5 seconds stop it
+    this.start();
+    setTimeout(() => {
+      this.stop();
+    }, 5000);
+  },
 };
 </script>
 <style scoped>
