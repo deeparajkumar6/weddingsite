@@ -84,5 +84,6 @@ export default {
 
 .NameClass {
   font-family: "Ribeye Marrow" !important;
+  text-align: center;
 }
 </style>

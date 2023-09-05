@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <router-view />
+      <NavBar />
     </v-main>
   </v-app>
 </template>
@@ -10,9 +11,10 @@ import { useAppStore } from "@/store/app";
 </script>
 
 <script>
+import NavBar from "@/components/NavBar.vue";
 export default {
   components: {
-    // AppBar,
+    NavBar,
   },
   methods: {
     handleResize() {
