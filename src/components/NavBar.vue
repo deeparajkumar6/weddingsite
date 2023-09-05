@@ -15,7 +15,7 @@
         :class="isMobile ? 'text-body-2' : ''"
       >
         <div class="d-flex flex-column justify-center align-center">
-          <v-img height="20" width="20" :src="getImgUrl(button.imgSrc)"></v-img>
+          <v-img height="20" width="20" :src="button.imgSrc"></v-img>
           <div class="text-primary">{{ button.text }}</div>
         </div>
       </v-card>
@@ -36,30 +36,30 @@ export default {
       buttonlist: [
         {
           text: "The Wedding",
-          imgSrc: "../assets/NavIcons/TheWedding.png",
+          imgSrc:
+            "https://d11wxd06uhkmuf.cloudfront.net/NavIcons/TheWedding.png",
           to: "/",
         },
         {
           text: "Events",
-          imgSrc: "../assets/NavIcons/Events.png",
+          imgSrc: "https://d11wxd06uhkmuf.cloudfront.net/NavIcons/Events.png",
           to: "/events",
         },
         {
           text: "Rituals",
-          imgSrc: "../assets/NavIcons/Rituals.png",
+          imgSrc: "https://d11wxd06uhkmuf.cloudfront.net/NavIcons/Rituals.png",
           to: "/rituals",
         },
         {
           text: "Travel & Stay",
-          imgSrc: "../assets/NavIcons/Travel.png",
+          imgSrc: "https://d11wxd06uhkmuf.cloudfront.net/NavIcons/Travel.png",
           to: "/travel",
         },
       ],
     };
   },
   methods: {
-    getImgUrl(imgSrc) {
-      console.log("imgSrc: ", imgSrc);
+    async getImgUrl(imgSrc) {
       let url = new URL(imgSrc, import.meta.url);
       return url.href;
     },
