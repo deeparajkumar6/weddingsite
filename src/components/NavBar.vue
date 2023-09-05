@@ -71,14 +71,14 @@ export default {
   text-transform: none !important;
 }
 .NavBarMobile {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 2;
   text-align: center;
 }
 
 .NavBar {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
