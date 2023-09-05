@@ -1,7 +1,7 @@
 <template>
   <v-card
     color="white"
-    class="ma-2"
+    class="ma-2 rounded-pill"
     :class="isMobile ? 'NavBarMobile' : 'NavBar'"
     rounded="5"
     :width="isMobile ? '96%' : '70%'"

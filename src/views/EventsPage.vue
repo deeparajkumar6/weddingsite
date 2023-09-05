@@ -27,7 +27,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-card height="100px" elevation="0"> </v-card>
+    <v-card height="20vh" elevation="0"> </v-card>
   </div>
 </template>
 
