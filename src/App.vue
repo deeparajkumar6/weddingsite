@@ -28,5 +28,11 @@ export default {
     this.handleResize();
     window.addEventListener("resize", this.handleResize);
   },
+  // watch route change and scroll screen to top
+  watch: {
+    $route() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
