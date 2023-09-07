@@ -14,15 +14,17 @@
           >
             <v-img
               :src="item.imgSrc"
-              height="100px"
-              width="100px"
+              height="150px"
+              width="150px"
               class="mx-auto"
             ></v-img>
-            <v-card-title class="text-primary">{{ item.title }}</v-card-title>
+            <v-card-title class="text-primary text-h5">{{
+              item.title
+            }}</v-card-title>
             <v-card-subtitle class="text-body-1">{{
               item.Date
             }}</v-card-subtitle>
-            <v-card-text class="text-body-2">{{ item.content }}</v-card-text>
+            <v-card-text class="text-body-1">{{ item.content }}</v-card-text>
           </v-card>
         </v-col>
       </v-row>

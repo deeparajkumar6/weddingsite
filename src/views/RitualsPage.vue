@@ -4,9 +4,11 @@
       class="pa-2 d-flex flex-column justify-center align-center"
       elevation="0"
     >
-      <v-card-title class="text-primary">Rituals</v-card-title>
-      <v-card-subtitle>Parampara.Pratishtha.Anushasan</v-card-subtitle>
-      <v-card-text>
+      <v-card-title class="text-primary text-h5">Rituals</v-card-title>
+      <v-card-subtitle class="text-body-1 text-center"
+        >Parampara.Pratishtha.Anushasan</v-card-subtitle
+      >
+      <v-card-text class="text-body-1 text-center">
         The myriad of traditional and elegant ceremonies that make up a Hindu
         wedding not only brings the families of the bride and groom closer
         together, but also ensures that no one leaves the festivities without
@@ -18,7 +20,7 @@
         <v-col cols="12" sm="6" v-for="item in buttonlist" :key="item.title">
           <v-card
             elevation="2"
-            height="200"
+            :height="isMobile ? '' : '300'"
             :to="item.to"
             class="d-flex align-center pa-1"
             style="text-align: center"
@@ -26,13 +28,17 @@
             <v-img
               aspect-ratio="1"
               :src="item.imgSrc"
-              max-height="100"
-              :width="isMobile ? '50' : '100'"
+              max-height="100vh"
+              :width="isMobile ? '90' : '150'"
               class="mx-auto flex-shrink-0"
             ></v-img>
             <div>
-              <v-card-title class="text-primary">{{ item.title }}</v-card-title>
-              <v-card-text :class="isMobile ? 'text-caption' : 'text-body-2'">{{
+              <v-card-title
+                class="text-primary text-h6"
+                style="white-space: initial"
+                >{{ item.title }}</v-card-title
+              >
+              <v-card-text :class="isMobile ? 'text-body-2' : 'text-body-1'">{{
                 item.content
               }}</v-card-text>
             </div>

@@ -30,13 +30,16 @@
         >
           <div
             class="d-flex my-2 NameClass"
-            :class="isMobile ? 'flex-column text-h5' : 'text-h4'"
+            :class="isMobile ? 'flex-column text-h4' : 'text-h2'"
           >
             <div>Sowjanya</div>
             <div>&nbsp; & &nbsp;</div>
             <div>Kaarthik</div>
           </div>
-          <div class="d-flex flex-column justify-center align-center">
+          <div
+            class="d-flex flex-column justify-center align-center"
+            :class="isMobile ? 'text-body-1' : 'text-h5'"
+          >
             <div class="mt-4">December 13 & 14, 2023</div>
             <div class="mt-2">Manghalam Weddings & Conventions,</div>
             <div>Srirangam, Trichy, Tamil Nadu.</div>
