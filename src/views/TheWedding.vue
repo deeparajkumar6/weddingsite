@@ -11,7 +11,8 @@
         <v-row class="my-2">
           <v-col :cols="isMobile ? null : 3">
             <v-img
-              src="../assets/DummyPic.png"
+              class="rounded-pill"
+              src="https://d11wxd06uhkmuf.cloudfront.net/sowjanya.jpg"
               aspect-ratio="1"
               :width="widthOfPic"
             ></v-img>
@@ -19,8 +20,9 @@
           <CountDown :cols="isMobile ? null : 6" v-if="!isMobile" />
           <v-col :cols="isMobile ? null : 3">
             <v-img
-              src="../assets/DummyPic.png"
+              src="https://d11wxd06uhkmuf.cloudfront.net/kaarthik.jpg"
               aspect-ratio="1"
+              class="rounded-pill"
               :width="widthOfPic"
             ></v-img>
           </v-col>
