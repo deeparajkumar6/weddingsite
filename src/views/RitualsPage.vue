@@ -5,8 +5,8 @@
       elevation="0"
     >
       <v-card-title class="text-primary text-h5">Rituals</v-card-title>
-      <v-card-subtitle class="text-body-1 text-center"
-        >Parampara.Pratishtha.Anushasan</v-card-subtitle
+      <v-card-title class="text-primary text-h6 text-center"
+        >Parampara.Pratishtha.Anushasan</v-card-title
       >
       <v-card-text class="text-body-1 text-center">
         The myriad of traditional and elegant ceremonies that make up a Hindu
