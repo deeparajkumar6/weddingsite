@@ -67,7 +67,7 @@ export default {
             "https://d11wxd06uhkmuf.cloudfront.net/Rituals/mangala-snanam.png",
 
           content:
-            "The wedding day starts with Maṅgaḷa Snānaṃ custom, where the bride and groom are required to take an auspicious bath. The aim is to purify them and make them prepared to perform sacred rites.",
+            "The wedding day starts with Maṅgaḷa Snānaṃ custom, where the bride and groom are required to take an auspicious bath.",
         },
         {
           title: "Gauri Pūja",
@@ -89,7 +89,7 @@ export default {
           imgSrc: "https://d11wxd06uhkmuf.cloudfront.net/Rituals/kanyadaan.png",
 
           content:
-            "Kanyādānaṃ is the ceremony in which the girl's family hands over their daughter's responsibility to the groom. During the ceremony, the bride's parents wash the groom's feet.",
+            "Kanyādānaṃ is the ceremony in which the girl's family hands over their daughter's responsibility to the groom.",
         },
         {
           title: "Paṇigrahaṇaṃ",
