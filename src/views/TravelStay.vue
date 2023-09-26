@@ -92,12 +92,12 @@
     >
       Sanjit +917538808351</v-text-text
     ><br />
-    <v-text-text
+    <!-- <v-text-text
       class="text-h6"
       :class="isMobile ? 'text-subtitle-1' : 'text-h6'"
     >
       Please let us know if you would like to stay at the venue.
-    </v-text-text>
+    </v-text-text> -->
   </v-card-text>
   <v-card
     class="pa-14 d-flex flex-column justify-left align-left"
