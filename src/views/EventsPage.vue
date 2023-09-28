@@ -49,14 +49,14 @@ export default {
         {
           title: "Muthyala",
           imgSrc: "https://d11wxd06uhkmuf.cloudfront.net/Events/muthyadalu.jpg",
-          Date: "Tuesday, Dec. 13th, from 9:15 a.m. - 9:45 a.m.",
+          Date: "Tuesday, Dec. 11th, from 9:15 a.m. - 9:45 a.m.",
           content:
             "21, Sukriti, Madavalagam Street, Puvalur, Lalgudi, Trichy, Tamil Nadu",
         },
         {
           title: "Muhurthakkal",
           imgSrc: "https://d11wxd06uhkmuf.cloudfront.net/Events/muhurtakal.jpg",
-          Date: "Tuesday, Dec. 13th, from 9:45 a.m. - 10:15 a.m.",
+          Date: "Tuesday, Dec. 11th, from 9:45 a.m. - 10:15 a.m.",
           content:
             "21, Sukriti, Madavalagam Street, Puvalur, Lalgudi, Trichy, Tamil Nadu",
         },
